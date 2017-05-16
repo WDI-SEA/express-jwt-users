@@ -31,7 +31,6 @@ UserSchema.methods.authenticated = function(password, callback) {
   });
 }
 
-
 // Let's encrypt our passwords using only the model!
 // This is a hook, a function that runs just before you save.
 UserSchema.pre('save', function(next) {
