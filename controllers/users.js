@@ -2,6 +2,7 @@ var express = require('express');
 var User = require('../models/user');
 var router = express.Router();
 
+//Find a user
 router.get('/', function(req, res) {
   User.find(function(err, users) {
     if (err) return res.send({message: 'An error occurred when finding users'});
@@ -10,6 +11,7 @@ router.get('/', function(req, res) {
   });
 });
 
+//SIGN-UP: Create a user
 router.post('/', function(req, res) {
   var user = new User(req.body);
   user.save(function(err) {

@@ -13,8 +13,13 @@
     "bcrypt": "^0.8.5",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
+<<<<<<< HEAD
     "express-jwt": "^5.3.0",
     "jsonwebtoken": "^7.4.0",
+=======
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.1.9",
+>>>>>>> 3b77f78b3a7c1787d4ef0fc0baac51a2a6df4aef
     "mongoose": "^4.4.7"
   }
 }
