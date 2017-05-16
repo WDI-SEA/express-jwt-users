@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 //Controllers
 app.use('/api/auth', require('./controllers/auth'));
 
-//Add middleware to look for token. Luckily express-jwt has this built-in
+//Add middleware to look for the token. Luckily express-jwt has this built-in
 app.use('/api/users', expressJWT({secret: secret}).unless({method: 'POST'}), require('./controllers/users'));
 app.use(function (err, req, res, next) {
   // send an appropriate status code & JSON object saying there was an error, if there was one.
